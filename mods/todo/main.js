@@ -1,4 +1,4 @@
-// To-do: a queue of instructions you write for the agent you're looking at.
+// Prompt Queue: a queue of instructions you write for the agent you're looking at.
 //
 // You add items as they occur to you while the agent works; nothing is sent
 // until you say so. Send one, or send them all as a single numbered message.
@@ -220,7 +220,7 @@ export default class Todo extends View {
 
     const header = h_flex().w_full().flex_none().px(14).h(44).items_center().gap(8)
       .border_b(1).border_color(t.border)
-      .child(div().flex_1().min_w(0).text_size(13).font_semibold().truncate().child("To-do"))
+      .child(div().flex_1().min_w(0).text_size(13).font_semibold().truncate().child("Prompt Queue"))
       .when(pending.length > 0, (el) => el.child(div().px(7).py(2).rounded(6).bg(t.raised)
         .text_size(11).text_color(t.dim).child(`${pending.length} pending`)));
 

@@ -1,18 +1,18 @@
-# To-do
+# Prompt Queue
 
 A list of instructions you write for the agent you are looking at. You add
 items as they occur to you while the agent works; nothing is sent until you
 say so. Send one, or send every pending one as a single numbered message.
 Sent items stay as a greyed record of what you already asked for.
 
-![To-do](preview.png)
+![Prompt Queue](preview.png)
 
 ## What you see
 
 One panel, a column, 330 px wide (min 260, max 560), background `background`,
 text `foreground`. Top to bottom:
 
-1. **Header**, 44 px, padded 14 px, bottom border `border`. "To-do" at 13 px
+1. **Header**, 44 px, padded 14 px, bottom border `border`. "Prompt Queue" at 13 px
    semibold on the left. When anything is pending, a pill on the right:
    `raised` background, 6 px radius, 11 px `dim` text, reading `N pending`.
 2. **Scope line**, 11 px `dim`, truncated at 60 characters. The focused
@@ -59,7 +59,7 @@ text `foreground`. Top to bottom:
 ## Built from
 
 A single mod, `mods/todo/`, placed by the layout as its own block. `mod.json`
-is `{ "place": "none", "title": "To-do" }`; the host layout adds a node with
+is `{ "place": "none", "title": "Prompt Queue" }`; the host layout adds a node with
 `"content": {"mod": "todo"}` and usually binds a key to
 `layout.toggle:<node id>`.
 

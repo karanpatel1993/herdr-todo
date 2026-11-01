@@ -1,9 +1,9 @@
-# To-do — a send queue for the agent you're looking at
+# Prompt Queue — a send queue for the agent you're looking at
 
 A Herdr mod. You jot instructions as they occur to you while an agent works,
 and send them when you're ready — one at a time, or all at once.
 
-![To-do](preview.png)
+![Prompt Queue](preview.png)
 
 The point is capturing your own train of thought without interrupting the
 agent. Think of something halfway through a run, write it down, keep reading.
